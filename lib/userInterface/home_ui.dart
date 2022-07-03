@@ -76,7 +76,7 @@ class HomeUi extends StatelessWidget {
                       articleModel.title ?? 'title',
                       style: const TextStyle(
                         color: Colors.white,
-                        fontSize: 30.0,
+                        fontSize: 25.0,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
