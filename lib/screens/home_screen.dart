@@ -80,7 +80,8 @@ class HomeScreen extends StatelessWidget {
             if (internetState is InternetLostState ||
                 internetState is InternetInitialState) {
               BlocProvider.of<NewsBloc>(context)
-                  .add(GetArticlesFromStorageEvent());
+                  .add(GetArticlesFromStorageEvent(
+              ));
             }
             return Container(
               color: Colors.black54,

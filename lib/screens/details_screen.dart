@@ -19,13 +19,15 @@ class DetailsScreen extends StatelessWidget {
       body: SizedBox(
         child: Stack(
           children: [
-            SizedBox(
-              height: double.infinity,
-              width: double.infinity,
-              child: Image.network(
-                articleModel.urlToImage ??
-                    'https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled.png',
-                fit: BoxFit.cover,
+            Container(
+              foregroundDecoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    articleModel.urlToImage ??
+                        'https://www.researchgate.net/publication/343170228/figure/fig6/AS:916672017874951@1595563048649/Encryption-and-decryption-of-white-and-black-images-a-Original-image-of-White-b.ppm',
+                  ),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             Container(

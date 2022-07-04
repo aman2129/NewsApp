@@ -5,7 +5,9 @@ abstract class NewsEvents {
 }
 class StartEvent extends NewsEvents {}
 
-class GetArticlesFromStorageEvent extends NewsEvents {}
+class GetArticlesFromStorageEvent extends NewsEvents {
+
+}
 
 class GetArticlesFromRepoEvent extends NewsEvents {}
 
