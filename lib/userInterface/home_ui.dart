@@ -79,6 +79,7 @@ class HomeUi extends StatelessWidget {
                         fontSize: 25.0,
                         fontWeight: FontWeight.bold,
                       ),
+                      maxLines: 3,
                     ),
                   ),
                 ),
