@@ -39,7 +39,7 @@ class HomeUi extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
+                    borderRadius: BorderRadius.circular(15.0),
                   ),
                   width: MediaQuery.of(context).size.width * 0.95,
                   height: MediaQuery.of(context).size.height * 0.29,
@@ -51,7 +51,7 @@ class HomeUi extends StatelessWidget {
                       ),
                       fit: BoxFit.cover,
                     ),
-                    borderRadius: BorderRadius.circular(10.0),
+                    borderRadius: BorderRadius.circular(15.0),
                   ),
                 ),
                 Positioned(

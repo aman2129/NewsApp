@@ -24,7 +24,7 @@ class DetailsScreen extends StatelessWidget {
                 image: DecorationImage(
                   image: NetworkImage(
                     articleModel.urlToImage ??
-                        'https://www.researchgate.net/publication/343170228/figure/fig6/AS:916672017874951@1595563048649/Encryption-and-decryption-of-white-and-black-images-a-Original-image-of-White-b.ppm',
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbaHFyQDsPWWaEg0JGuveA2QupO9fgqsVvPQ&usqp=CAU',
                   ),
                   fit: BoxFit.cover,
                 ),
