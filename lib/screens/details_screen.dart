@@ -45,7 +45,7 @@ class DetailsScreen extends StatelessWidget {
             ),
             Positioned(
               bottom: 20,
-              left: 30,
+              left: 25,
               right: 30,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
