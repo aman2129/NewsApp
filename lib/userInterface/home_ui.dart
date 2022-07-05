@@ -11,14 +11,8 @@ class HomeUi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ZoomTapAnimation(
-        enableLongTapRepeatEvent: false,
-        longTapRepeatDuration: const Duration(milliseconds: 100),
-        begin: 1.0,
-        end: 0.93,
-        beginDuration: const Duration(milliseconds: 20),
-        endDuration: const Duration(milliseconds: 120),
-        beginCurve: Curves.decelerate,
-        endCurve: Curves.fastOutSlowIn,
+      begin: 1.0,
+      end: 0.94,
       child: GestureDetector(
         onTap: () => Navigator.push(
           context,
@@ -71,44 +65,45 @@ class HomeUi extends StatelessWidget {
                       ),
                     ),
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0, vertical: 40.0),
-                    child: Text(
-                      articleModel.title ?? 'title',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxLines: 3,
+                        horizontal: 15.0, vertical: 15.0),
+                    child: Column(
+                      children: [
+                        Text(
+                          articleModel.title ?? 'title',
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 25.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          maxLines: 3,
+                        ),
+                        const SizedBox(height: 14.0,),
+                        Row(
+                          children: [
+                            Text(
+                              articleModel.source ?? 'Unknown',
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 13.0,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 15.0,
+                            ),
+                            Text(
+                              articleModel.publishedAt?.substring(0, 10) ?? 'date',
+                              style: const TextStyle(
+                                color: Colors.white38,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ),
-                Positioned(
-                  left: 15.0,
-                  right: 0.0,
-                  bottom: 15.0,
-                  child: Row(
-                    children: [
-                      Text(
-                        articleModel.source ?? 'Unknown',
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 13.0,
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 15.0,
-                      ),
-                      Text(
-                        articleModel.publishedAt?.substring(0, 10) ?? 'date',
-                        style: const TextStyle(
-                          color: Colors.white38,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+
               ],
             ),
           ),
