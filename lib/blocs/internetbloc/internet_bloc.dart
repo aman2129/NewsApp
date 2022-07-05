@@ -11,8 +11,8 @@ class InternetBloc extends Bloc<InternetEvents, InternetStates> {
   final Connectivity _connectivity = Connectivity();
   StreamSubscription? connectivitySubscription;
   InternetBloc() : super(InternetInitialState()) {
-    on<InternetLostEvent>((event, emit) => emit(InternetLostState()));
     on<InternetGainedEvent>((event, emit) => emit(InternetGainedState()));
+    on<InternetLostEvent>((event, emit) => emit(InternetLostState()));
 
     connectivitySubscription =
         _connectivity.onConnectivityChanged.listen((result) {
