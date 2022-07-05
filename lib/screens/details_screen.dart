@@ -45,7 +45,7 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 200,
+              bottom: 20,
               left: 30,
               right: 30,
               child: Column(
@@ -68,16 +68,7 @@ class DetailsScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                ],
-              ),
-            ),
-            Positioned(
-              bottom: 10,
-              left: 30,
-              right: 30,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
+                  const SizedBox(height: 80.0,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -99,9 +90,7 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  const SizedBox(height: 20.0,),
                   Text(
                     articleModel.description ?? 'description',
                     style: const TextStyle(
@@ -114,6 +103,7 @@ class DetailsScreen extends StatelessWidget {
                 ],
               ),
             ),
+
           ],
         ),
       ),
