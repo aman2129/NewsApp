@@ -77,7 +77,9 @@ class HomeUi extends StatelessWidget {
                           ),
                           maxLines: 3,
                         ),
-                        const SizedBox(height: 14.0,),
+                        const SizedBox(
+                          height: 14.0,
+                        ),
                         Row(
                           children: [
                             Text(
@@ -92,7 +94,8 @@ class HomeUi extends StatelessWidget {
                               width: 15.0,
                             ),
                             Text(
-                              articleModel.publishedAt?.substring(0, 10) ?? 'date',
+                              articleModel.publishedAt?.substring(0, 10) ??
+                                  'date',
                               style: const TextStyle(
                                 color: Colors.white38,
                               ),
@@ -103,7 +106,6 @@ class HomeUi extends StatelessWidget {
                     ),
                   ),
                 ),
-
               ],
             ),
           ),
@@ -112,4 +114,3 @@ class HomeUi extends StatelessWidget {
     );
   }
 }
-

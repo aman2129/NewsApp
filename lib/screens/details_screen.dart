@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:grevity/models/article_model.dart';
 import 'package:grevity/userInterface/appbar_ui.dart';
 
-
 class DetailsScreen extends StatelessWidget {
   final ArticleModel articleModel;
 
@@ -68,7 +67,9 @@ class DetailsScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 80.0,),
+                  const SizedBox(
+                    height: 80.0,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -90,7 +91,9 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 20.0,),
+                  const SizedBox(
+                    height: 20.0,
+                  ),
                   Text(
                     articleModel.description ?? 'description',
                     style: const TextStyle(
@@ -103,12 +106,9 @@ class DetailsScreen extends StatelessWidget {
                 ],
               ),
             ),
-
           ],
         ),
       ),
     );
   }
 }
-
-
